@@ -1,0 +1,56 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C Release: gcc-11 build active file",
+			"command": "/bin/gcc-11",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-O3",
+				"-Wall",
+				"-std=c2x",
+				"${file}",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}_R.o"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: /bin/gcc-11"
+		},
+		{
+		"type": "cppbuild",
+		"label": "C Debug: gcc-11 build active file",
+		"command": "/bin/gcc-11",
+		"args": [
+			"-fdiagnostics-color=always",
+			"-g",
+			"-Og",
+			"-Wall",
+			"-std=c2x",
+			"${file}",
+			"-o",
+			"${fileDirname}/${fileBasenameNoExtension}_D.o"
+		],
+		"options": {
+			"cwd": "${fileDirname}"
+		},
+		"problemMatcher": [
+			"$gcc"
+		],
+		"group": {
+			"kind": "build",
+			"isDefault": true
+		},
+		"detail": "compiler: /bin/gcc-11"
+	}
+	]
+}
