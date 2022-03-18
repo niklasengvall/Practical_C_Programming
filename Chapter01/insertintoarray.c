@@ -1,5 +1,5 @@
 // Inserting an element in an array
-// 16856
+// 
 // Filename:  insertintoarray.c
 // Chapter:   1
 // Page:      11
