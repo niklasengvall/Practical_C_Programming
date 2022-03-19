@@ -37,8 +37,7 @@ int main(void)
 		}
 	} while (n < 1 || n > max_array_size); // Only allow values between 1 and max_array_size
 	
-	printf("n = %d\n", n); 
-	
+	// Let the user input all elements
 	for(i = 0; i <= n - 1; i++ ) {
    		printf("Enter %d element: \n", i + 1); 
 		if(scanf("%d", &intArray[i]) == EOF)
