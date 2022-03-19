@@ -38,7 +38,7 @@ int main()
 	
 	// Let the user input all elements
 	for(i = 0; i <= n - 1; i++ ) {
-   		printf("Enter %d element: \n", i + 1); 
+   		printf("\nEnter %d element: ", i + 1); 
 		if(scanf("%d", &intArray[i]) == EOF)
 			return 2;  
 	}
