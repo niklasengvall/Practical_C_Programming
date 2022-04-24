@@ -4,11 +4,13 @@
 		{
 			"type": "cppbuild",
 			"label": "C Release: gcc-11 build active file",
-			"command": "/bin/gcc-11",
+			"command": "gcc",
 			"args": [
 				"-fdiagnostics-color=always",
 				"-O3",
 				"-Wall",
+				"-Wextra",
+				"-pedantic",
 				"-std=c2x",
 				"${file}",
 				"-o",
@@ -24,17 +26,19 @@
 				"kind": "build",
 				"isDefault": true
 			},
-			"detail": "compiler: /bin/gcc-11"
+			"detail": "compiler: /usr/bin/gcc"
 		},
 		{
 		"type": "cppbuild",
 		"label": "C Debug: gcc-11 build active file",
-		"command": "/bin/gcc-11",
+		"command": "gcc",
 		"args": [
 			"-fdiagnostics-color=always",
 			"-g",
 			"-Og",
 			"-Wall",
+			"-Wextra",
+			"-pedantic",
 			"-std=c2x",
 			"${file}",
 			"-o",
@@ -50,7 +54,7 @@
 			"kind": "build",
 			"isDefault": true
 		},
-		"detail": "compiler: /bin/gcc-11"
+		"detail": "compiler: /usr/bin/gcc"
 	}
 	]
 }
