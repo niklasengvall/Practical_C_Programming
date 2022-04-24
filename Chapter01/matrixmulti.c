@@ -1,6 +1,6 @@
 // Multiplying two matrices
 //
-// Filename:  deöetefromarray.c
+// Filename:  matixmulti.c
 // Chapter:   1
 // Page:      18-19
 // Created:   2022-04-25
@@ -10,10 +10,6 @@
 // Orginal code example by Bintu Harwani, from the book Practical C Programming, 1st ed, feb 2020.
 // 
 // Description: This example multiplies two matrices, 2 x 3 and 3 x 4 to a 2 x 4 matrix
-// 
-// 
-// 
-// 
 
 #include <stdio.h>
 
